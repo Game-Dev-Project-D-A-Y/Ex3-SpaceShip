@@ -16,7 +16,7 @@ public class KeyboardMover: MonoBehaviour {
         float vertical = Input.GetAxis("Vertical");     // +1 if up arrow is pushed, -1 if down arrow is pushed, 0 otherwise
         Vector3 movementVector = new Vector3(horizontal, vertical, 0) * speed * Time.deltaTime;
         //transform.position += movementVector;
-        rb.velocity = new Vector3(horizontal, vertical, 0) * speed;
+        rb.velocity = new Vector3(horizontal, vertical, 0) * speed; // it'll make the Object go smoothly and not "jump" againts the wall
         //transform.Translate(movementVector);
         // NOTE: "Translate(movementVector)" uses relative coordinates - 
         //       it moves the object in the coordinate system of the object itself.
@@ -25,17 +25,5 @@ public class KeyboardMover: MonoBehaviour {
         // It makes a difference only if the object is rotated.
     }
 
-    public void setSpeed(float newSpeed)
-    {
-        speed = newSpeed;
-    }
 
-    public float getSpeed()
-    {
-        return speed;
-    }
-    public void setPosition(Vector3 pos)
-    {
-        transform.position = pos;
-    }
 }

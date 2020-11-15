@@ -8,6 +8,8 @@ TagManager:
   - Laser
   - Wall
   - Border
+  - TopBorder
+  - BottomBorder
   layers:
   - Default
   - TransparentFX
