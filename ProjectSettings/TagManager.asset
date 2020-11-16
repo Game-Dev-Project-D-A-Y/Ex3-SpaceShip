@@ -15,6 +15,9 @@ TagManager:
   - RightTelepBorder
   - HorizontalTelepBorder
   - VerticalTelepBorder
+  - BlueCapsule
+  - RedCapsule
+  - GreenCapsule
   layers:
   - Default
   - TransparentFX
