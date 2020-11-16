@@ -10,6 +10,9 @@ TagManager:
   - Border
   - TopBorder
   - BottomBorder
+  - TeleporteringBorder
+  - LeftTelepBorder
+  - RightTelepBorder
   layers:
   - Default
   - TransparentFX
