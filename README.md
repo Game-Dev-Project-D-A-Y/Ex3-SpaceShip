@@ -37,7 +37,7 @@ To do so we used [FindGameObjectsWithTag](https://docs.unity3d.com/ScriptReferen
 ### 1 - A flat world with visible boundaries
 Link https://game-dev-project-d-a-y.itch.io/spaceshippartb1
 
-We've created a prefab "border" and we used 4 border objects - each one represents a border of the game (top, bottom, left and right)
+We've created a prefab "border" and we used 4 border objects - each one represents a border of the game (top, bottom, left and right)  
 Each border has these components: 
 * Rigid Body - Control of an object's position through physics simulation.
 * Box Colider -The Box Collider is a basic cube-shaped collision primitive.
@@ -49,25 +49,27 @@ Each border has these components:
 ![alt text](https://github.com/Game-Dev-Project-D-A-Y/Ex3-Spaceship/blob/master/Images%20for%20github/Borders.jpeg?raw=true)
 
 
-Our main player the SpaceShip also has the coliderr component and the Unity engine according to the Dynamic physics will identify the colistion and 
-maintains the position of the spaceship inside our boundries..
-<br/> In the KeyboardMover component of the spaceship we've added a RigidBody object which makes the Object go smoothly and not "jump" againts the wall
+Our main player the SpaceShip also has the coliderr component and the Unity engine according to the Dynamic physics will identify the colistion and maintains the position of the spaceship inside our boundries..  
+In the KeyboardMover component of the spaceship we've added a RigidBody object which makes the Object go smoothly and not "jump" againts the wall.
 
 
 
 ### 2 - A flat world with invisible boundaries
 Link https://game-dev-project-d-a-y.itch.io/spaceship-part-b2
 
-To do this we just had to do one simple change from the previous scene (1-A):
-We've maid the mesh Renderer invisbile (by ticking the box right near the component's name)
+To do this we just had to do one simple change from the previous scene (1-A):  
+We've maid the mesh Renderer invisbile (by ticking the box right near the component's name)  
 now you can't see the shape of the border but it functionality works.
 
 ### 3 - A round world. When the player reaches one side of the world he appears on the other side.
 Link https://game-dev-project-d-a-y.itch.io/spaceshippartb3
 
-First thing we've clicked on the border to avoid them on this task.
-We added a script named "RoundWorld". In this script we got the position of every border using the orthographicSize combined with the camera.aspect function..By using the Input.GetAxis function we
-know in which direction the spaceship is flying from.
+First thing we've clicked on the border to avoid them on this task.  
+We added a script named "[CircleWorldCamera]()".  
+In this script we got the position of every border using the [orthographicSize](https://docs.unity3d.com/ScriptReference/Camera-orthographicSize.html
+) combined with the [camera.aspect](https://docs.unity3d.com/ScriptReference/Camera-aspect.html
+) function..  
+By using the Input.GetAxis function we know in which direction the spaceship is flying from.  
 With a few simple "if" statements we covered all of the options (4 options one for each direction).
 
 
