@@ -34,6 +34,7 @@ maintains the position of the spaceship inside our boundries..
 
 ### 2 - A flat world with invisible boundaries
 Link https://game-dev-project-d-a-y.itch.io/spaceship-part-b2
+
 To do this we just had to do one simple change from the previous scene (1-A):
 We've maid the mesh Renderer invisbile (by ticking the box right near the component's name)
 now you can't see the shape of the border but it functionality works.
