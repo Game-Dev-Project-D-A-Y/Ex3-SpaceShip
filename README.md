@@ -5,9 +5,9 @@
 
 
 ### 3 - The spaceship has N lives and only when it crashes N times it will be destroyed.
-<br> We added to the spaceship an object named "HealthPoint".
-This object has a <b> "HealthPointManager" script. </b>
-This script handles operations on the player's hp which can be modified through the Inspector.
+We added to the spaceship an object named "HealthPoint".  
+This object has a **"HealthPointManager" script.**  
+This script handles operations on the player's hp which can be modified through the Inspector.  
 In addition, we had to add a script to the ship which will handle the collisions and hp therefore we created the <b> "DestroyOnTriggerWithHP" </b> .
     
    
