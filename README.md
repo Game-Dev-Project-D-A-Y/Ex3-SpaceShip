@@ -104,3 +104,5 @@ Using the OnTriggerEnter we actviated the option to destroy (with a boolian flag
   * Alon Perlmuter
   * Yishay Garame
   * Dovie Chitiz
+  
+  Enjoy !
