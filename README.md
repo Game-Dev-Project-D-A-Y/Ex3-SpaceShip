@@ -8,7 +8,10 @@
 We added to the spaceship an object named "HealthPoint".  
 This object has a **"HealthPointManager" script.**  
 This script handles operations on the player's hp which can be modified through the Inspector.  
-In addition, we had to add a script to the ship which will handle the collisions and hp therefore we created the <b> "DestroyOnTriggerWithHP" </b> .
+In addition, we had to add a script to the ship which will handle the collisions and hp therefore we created the **DestroyOnTriggerWithHP**.  
+  
+  <img src=https://github.com/Game-Dev-Project-D-A-Y/Ex3-Spaceship/blob/master/Images%20for%20github/hpspaceship.jpg width="250"/>
+
     
    
    Link to scripts:  
@@ -28,7 +31,10 @@ We added a script - **[SpawnByScore](https://github.com/Game-Dev-Project-D-A-Y/E
 We added the prefab **"Bomb"** which will be cloned every time it will be called by it's spawner.  
 To eliminate all the enemies around the screen, we've created the [DestroyAllObjectsOnTrigger](https://github.com/Game-Dev-Project-D-A-Y/Ex3-Spaceship/blob/master/Assets/Scripts/3-collisions/DestroyAllObjectsOnTrigger.cs) which basically destroyes all the enemies around.  
 To do so we used [FindGameObjectsWithTag](https://docs.unity3d.com/ScriptReference/GameObject.FindGameObjectsWithTag.html
-) which gave us an array of all the enemies and then we were able to count how many we have destroyed in order to update the score bored.
+) which gave us an array of all the enemies and then we were able to count how many we have destroyed in order to update the score bored.  
+  
+    <img src=https://github.com/Game-Dev-Project-D-A-Y/Ex3-Spaceship/blob/master/Images%20for%20github/bonbEvery20.jpg width="250"/>
+
 
 ## B - Boundries
 
