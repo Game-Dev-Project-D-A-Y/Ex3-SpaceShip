@@ -7,25 +7,21 @@
 
 ### 3 - The spaceship has N lives and only when it crashes N times it will be destroyed.
 We added to the spaceship an object named "HealthPoint".  
-This object has a **[HealthPointManager](https://github.com/Game-Dev-Project-D-A-Y/Ex3-Spaceship/blob/master/Assets/Scripts/5-scripts/HealthPointManager.cs) script.**  
+This object has a [HealthPointManager](https://github.com/Game-Dev-Project-D-A-Y/Ex3-Spaceship/blob/master/Assets/Scripts/5-scripts/HealthPointManager.cs) script.  
 This script handles operations on the player's hp which can be modified through the Inspector.  
-In addition, we had to add a script to the ship which will handle the collisions and hp therefore we created the **DestroyOnTriggerWithHP**.  
+In addition, we had to add a script to the ship which will handle the collisions and hp therefore we created the [DestroyOnTriggerWithHP](https://github.com/Game-Dev-Project-D-A-Y/Ex3-Spaceship/blob/master/Assets/Scripts/3-collisions/DestroyOnTriggerWithHP.cs).  
   
   <img src=https://github.com/Game-Dev-Project-D-A-Y/Ex3-Spaceship/blob/master/Images%20for%20github/hpspaceship.jpg width="250"/>
 
     
-   
-   Link to scripts:  
-   * [DestroyOnTriggerWithHP](https://github.com/Game-Dev-Project-D-A-Y/Ex3-Spaceship/blob/master/Assets/Scripts/3-collisions/DestroyOnTriggerWithHP.cs)   
-   * [HealthPointManager](https://github.com/Game-Dev-Project-D-A-Y/Ex3-Spaceship/blob/master/Assets/Scripts/5-scripts/HealthPointManager.cs) 
 
 ### 4 - Delay between every shot.  
-Instead of using the KeyboardSpawner script we've implemented our own **KeyboardSpawnerWithDelay** script.  
+Instead of using the KeyboardSpawner script we've implemented our own [KeyboardSpawnerWithDelay](https://github.com/Game-Dev-Project-D-A-Y/Ex3-Spaceship/blob/master/Assets/Scripts/2-spawners/KeyboardSpawnerWithDelay.cs) script.  
 This script allows us to adjust a delay which its duration may be changed in the Inspector.  
 The LaserShooter inherits the KeyboardSpawnerWithDelay.  
   
-  Link to scripts:  
-  * [KeyboardSpawnerWithDelay](https://github.com/Game-Dev-Project-D-A-Y/Ex3-Spaceship/blob/master/Assets/Scripts/2-spawners/KeyboardSpawnerWithDelay.cs)
+   
+  
 
 ### Extra Feature - Special Bomb eliminates all enemies around :bomb:  
 We added a script - **[SpawnByScore](https://github.com/Game-Dev-Project-D-A-Y/Ex3-Spaceship/blob/master/Assets/Scripts/2-spawners/SpawnByScore.cs)** which will reveal a special bomb every N amount of enemy kills (N may be changed by Inspector).  
