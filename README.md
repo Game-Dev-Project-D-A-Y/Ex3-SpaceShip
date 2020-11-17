@@ -42,6 +42,8 @@ With a few simple "if" statements we covered all of the options (4 options one f
 
 
 ## C - Implement Core Game Loop
+<br/>
+![alt text]https://github.com/Game-Dev-Project-D-A-Y/Ex3-Spaceship/blob/master/Images%20for%20github/RGBHero.jpeg
 
 We created a game based on the logic of Guitar Hero.
 We created three spawners which a "Capsule" in a color Red Green or Blue will drop from each spawner. We positioned the spawners on the top left of the screen with a small space between each one.
