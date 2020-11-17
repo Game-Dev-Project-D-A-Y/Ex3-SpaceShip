@@ -11,15 +11,19 @@ public class DestroyAllObjectsOnTrigger : MonoBehaviour
     [SerializeField]
     string triggeringTag;
 
-    [SerializeField] NumberField scoreField;
+    [SerializeField] NumberField numberField;
 
+    void Start()
+    {
+        // GameObject sf = GameObject.Find("ScoreField");
+        // numberField = sf.GetComponent<NumberField>();
+    }
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player" && enabled)
         {
-            Debug.Log("OnTrigger");
-            DestroyAllObjects();
             Destroy(this.gameObject);
+            DestroyAllObjects();
         }
     }
 
