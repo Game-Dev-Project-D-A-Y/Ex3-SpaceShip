@@ -1,17 +1,33 @@
 # Ex3 - Game Development PREFABS & TRIGGERS
 
-## A - Changing & Improving the lesson's game
+## A - Changing & Improving the lesson's game 
+### (Choose from 1-5 and add an original)
 
-### 1 -
 
-### 2 -
+### 3 - The spaceship has N lives and only when it crashes N times it will be destroyed.
+We added to the spaceship an object named "HealthPoint".  
+This object has a **"HealthPointManager" script.**  
+This script handles operations on the player's hp which can be modified through the Inspector.  
+In addition, we had to add a script to the ship which will handle the collisions and hp therefore we created the <b> "DestroyOnTriggerWithHP" </b> .
+    
+   
+   Link to scripts:  
+   * [DestroyOnTriggerWithHP]() -  
+   * [HealthPointManager](https://github.com/Game-Dev-Project-D-A-Y/Ex3-Spaceship/blob/master/Assets/HealthPointManager.cs) 
 
-### 3 -
+### 4 - Delay between every shot.  
+Instead of using the KeyboardSpawner script we've implemented our own **KeyboardSpawnerWithDelay** script.  
+This script allows us to adjust a delay which its duration may be changed in the Inspector.  
+The LaserShooter inherits the KeyboardSpawnerWithDelay. 
+  Link to scripts:  
+  * [KeyboardSpawnerWithDelay]()
 
-### 4 -
-
-### 5 -
-
+### Extra Feature - Special Bomb eliminates all enemies around 
+We added a script - **"[SpawnByScore]()"** which will reveal a special bomb every N amount of enemy kills (N may be changed by Inspector).  
+We added the prefab **"Bomb"** which will be cloned every time it will be called by it's spawner.  
+To eliminate all the enemies around the screen, we've created the [DestroyAllObjectsOnTrigger]() which basically destroyes all the enemies around.  
+To do so we used [FindGameObjectsWithTag](https://docs.unity3d.com/ScriptReference/GameObject.FindGameObjectsWithTag.html
+) which gave us an array of all the enemies and then we were able to count how many we have destroyed in order to update the score bored.
 
 ## B - Boundries
 
@@ -21,7 +37,7 @@
 ### 1 - A flat world with visible boundaries
 Link https://game-dev-project-d-a-y.itch.io/spaceshippartb1
 
-We've created a prefab "border" and we used 4 border objects - each one represents a border of the game (top, bottom, left and right)
+We've created a prefab "border" and we used 4 border objects - each one represents a border of the game (top, bottom, left and right)  
 Each border has these components: 
 * Rigid Body - Control of an object's position through physics simulation.
 * Box Colider -The Box Collider is a basic cube-shaped collision primitive.
@@ -33,25 +49,27 @@ Each border has these components:
 ![alt text](https://github.com/Game-Dev-Project-D-A-Y/Ex3-Spaceship/blob/master/Images%20for%20github/Borders.jpeg?raw=true)
 
 
-Our main player the SpaceShip also has the coliderr component and the Unity engine according to the Dynamic physics will identify the colistion and 
-maintains the position of the spaceship inside our boundries..
-<br/> In the KeyboardMover component of the spaceship we've added a RigidBody object which makes the Object go smoothly and not "jump" againts the wall
+Our main player the SpaceShip also has the coliderr component and the Unity engine according to the Dynamic physics will identify the colistion and maintains the position of the spaceship inside our boundries..  
+In the KeyboardMover component of the spaceship we've added a RigidBody object which makes the Object go smoothly and not "jump" againts the wall.
 
 
 
 ### 2 - A flat world with invisible boundaries
 Link https://game-dev-project-d-a-y.itch.io/spaceship-part-b2
 
-To do this we just had to do one simple change from the previous scene (1-A):
-We've maid the mesh Renderer invisbile (by ticking the box right near the component's name)
+To do this we just had to do one simple change from the previous scene (1-A):  
+We've maid the mesh Renderer invisbile (by ticking the box right near the component's name)  
 now you can't see the shape of the border but it functionality works.
 
 ### 3 - A round world. When the player reaches one side of the world he appears on the other side.
 Link https://game-dev-project-d-a-y.itch.io/spaceshippartb3
 
-First thing we've clicked on the border to avoid them on this task.
-We added a script named "RoundWorld". In this script we got the position of every border using the orthographicSize combined with the camera.aspect function..By using the Input.GetAxis function we
-know in which direction the spaceship is flying from.
+First thing we've clicked on the border to avoid them on this task.  
+We added a script named "[CircleWorldCamera]()".  
+In this script we got the position of every border using the [orthographicSize](https://docs.unity3d.com/ScriptReference/Camera-orthographicSize.html
+) combined with the [camera.aspect](https://docs.unity3d.com/ScriptReference/Camera-aspect.html
+) function..  
+By using the Input.GetAxis function we know in which direction the spaceship is flying from.  
 With a few simple "if" statements we covered all of the options (4 options one for each direction).
 
 
