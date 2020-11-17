@@ -22,6 +22,7 @@ Each border has these components:
 * Box Colider -The Box Collider is a basic cube-shaped collision primitive.
 * Cube (Mesh Filter) - We created a cube with this component. 
 * Mesh Renderer - The Mesh Renderer takes the geometry from the Mesh Filter and renders it at the position defined by the object's Transform component.
+![alt text](https://github.com/Game-Dev-Project-D-A-Y/Ex3-Spaceship/blob/master/Images%20for%20github/Borders.jpeg?raw=true)
 
 Our main player the SpaceShip also has the coliderr component and the Unity engine according to the Dynamic physics will identify the colistion and 
 maintains the position of the spaceship inside our boundries..
