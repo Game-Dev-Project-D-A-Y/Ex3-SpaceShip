@@ -11,9 +11,9 @@ This script handles operations on the player's hp which can be modified through 
 In addition, we had to add a script to the ship which will handle the collisions and hp therefore we created the <b> "DestroyOnTriggerWithHP" </b> .
     
    
-   Link to scripts:
-   DestroyOnTriggerWithHP - 
-   HealthPointManager
+   Link to scripts:  
+   * DestroyOnTriggerWithHP -  
+   * HealthPointManager - 
 
 ### 4 -
 
