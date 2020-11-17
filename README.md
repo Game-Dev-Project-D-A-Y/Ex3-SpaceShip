@@ -29,10 +29,16 @@ In the KeyboardMover component of the spaceship we've added a RigidBody object w
 
 
 
-### 2 -
+### 2 - A flat world with invisible boundaries
+To do this we just had to do one simple change from the previous scene (1-A):
+We've maid the mesh Renderer invisbile (by ticking the box right near the component's name)
+now you can't see the shape of the border but it functionality works.
 
-### 3 -
-
+### 3 - A round world. When the player reaches one side of the world he appears on the other side.
+First thing we've clicked on the border to avoid them on this task.
+We added a script named "RoundWorld". In this script we got the position of every border using the orthographicSize combined with the camera.aspect function..By using the Input.GetAxis function we
+know in which direction the spaceship is flying from.
+With a few simple "if" statements we covered all of the options (4 options one for each direction).
 
 
 ## C - Implement Core Game Loop
