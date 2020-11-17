@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/**
+    Destroy a object with a given tag when collides
+*/
 public class ObjectDestroyOnTrigger : MonoBehaviour
 {
     [Tooltip("Destroy object with the triggeringTag")]

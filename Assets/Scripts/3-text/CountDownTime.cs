@@ -4,10 +4,11 @@ using UnityEngine;
 using TMPro;
 
 /*
+    Handle the timer
  */
-
 public class CountDownTime : MonoBehaviour
 {
+    [Tooltip("Time to countdown")]
     [SerializeField] float timeRemaining;
     private TextMeshPro textField;
 

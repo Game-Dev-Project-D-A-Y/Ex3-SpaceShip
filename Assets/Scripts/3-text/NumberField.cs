@@ -9,8 +9,10 @@ using UnityEngine;
  */
 [RequireComponent(typeof(TextMeshPro))]
 public class NumberField : MonoBehaviour {
+
     private TextMeshPro textField;
     private int number;
+    
     void Start()    {
         textField = GetComponent<TextMeshPro>();
     }

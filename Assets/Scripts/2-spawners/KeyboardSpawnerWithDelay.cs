@@ -1,7 +1,7 @@
 ﻿using System;
-using System.Threading;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 
 /**
@@ -9,20 +9,33 @@ using UnityEngine;
  */
 public class KeyboardSpawnerWithDelay : MonoBehaviour
 {
-    [SerializeField] protected KeyCode keyToPress;
-    [SerializeField] protected GameObject prefabToSpawn;
-    [SerializeField] protected Vector3 velocityOfSpawnedObject;
-    [SerializeField] protected float delay;
-    
+    [Tooltip("Key to trigger a spawn")]
+    [SerializeField]
+    protected KeyCode keyToPress;
+
+    [Tooltip("Prefab object to spawn")]
+    [SerializeField]
+    protected GameObject prefabToSpawn;
+
+    [Tooltip("Object velocity")]
+    [SerializeField]
+    protected Vector3 velocityOfSpawnedObject;
+
+    [Tooltip("Delay time in seconds")]
+    [SerializeField]
+    protected float delay;
+
     private float time;
-    private int hasShoted; // Flag that indicates if shot has been shoted
+
+    private bool hasShoted; // Flag that indicates if shot has been shoted
 
     protected virtual GameObject spawnObject()
     {
         // Step 1: spawn the new object.
-        Vector3 positionOfSpawnedObject = transform.position;  // span at the containing object position.
-        Quaternion rotationOfSpawnedObject = Quaternion.identity;  // no rotation.
-        GameObject newObject = Instantiate(prefabToSpawn, positionOfSpawnedObject, rotationOfSpawnedObject);
+        Vector3 positionOfSpawnedObject = transform.position; // span at the containing object position.
+        Quaternion rotationOfSpawnedObject = Quaternion.identity; // no rotation.
+        GameObject newObject =
+            Instantiate(prefabToSpawn, positionOfSpawnedObject, rotationOfSpawnedObject);
 
         // Step 2: modify the velocity of the new object.
         Mover newObjectMover = newObject.GetComponent<Mover>();
@@ -36,27 +49,26 @@ public class KeyboardSpawnerWithDelay : MonoBehaviour
 
     private void Start()
     {
-        hasShoted = 0;
+        hasShoted = false;
         time = 0;
     }
 
     private void Update()
     {
-        //Debug.Log("t: " + time);
-        if (hasShoted == 1)
+        if (hasShoted)
         {
             time += Time.deltaTime;
             if (time >= delay)
             {
-                hasShoted = 0;
+                hasShoted = false;
                 time = 0;
             }
         }
 
-        if (Input.GetKeyDown(keyToPress) && hasShoted == 0)
+        if (Input.GetKeyDown(keyToPress) && !hasShoted)
         {
             spawnObject();
-            hasShoted = 1;
+            hasShoted = true;
         }
     }
 }

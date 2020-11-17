@@ -2,26 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/**
+    Handle the cirular world using camera borders
+*/
 public class CircleWorldCamera : MonoBehaviour
 {
-    Camera camera;
+    private Camera camera;
 
-    float cameraLeftBorder;
+    private float cameraLeftBorder;
 
-    float cameraRightBorder;
+    private float cameraRightBorder;
 
-    float cameraTopBorder;
+    private float cameraTopBorder;
 
-    float cameraBottomBorder;
+    private float cameraBottomBorder;
 
     // Start is called before the first frame update
     void Start()
     {
         camera = Camera.main;
-
-        Debug.Log("cam.orthographicSize: " + camera.orthographicSize);
-        Debug.Log("camera.aspect: " + camera.aspect);
-        Debug.Log("total: " + camera.aspect * camera.orthographicSize);
 
         cameraRightBorder = camera.aspect * camera.orthographicSize;
         cameraLeftBorder = -cameraRightBorder;
@@ -33,12 +32,13 @@ public class CircleWorldCamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float horizontal = Input.GetAxis("Horizontal"); // +1 if right arrow is pushed, -1 if left arrow is pushed, 0 otherwise
+        float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
         float posX = transform.position.x;
         float posY = transform.position.y;
         float posZ = transform.position.z;
+
 
         if (posX >= cameraRightBorder && horizontal > 0)
         {

@@ -2,22 +2,35 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * This script Goal is to open a time space which allow you to destroy once activated while colition.
+*/
 public class GetColorOnTrigger : MonoBehaviour
 {
     [Tooltip("Destroy object with the triggeringTag")]
-    [SerializeField] string triggeringTag;
-    [Tooltip("Destroy object a specific key from the keyboard")]
-    [SerializeField] KeyCode keyToPress;
-    [SerializeField] NumberField scoreField;
-    [SerializeField] int pointsToAdd; 
+    [SerializeField]
+    string triggeringTag;
 
-    bool active = false;
-    GameObject color;
+    [Tooltip("Destroy object a specific key from the keyboard")]
+    [SerializeField]
+    KeyCode keyToPress;
+
+    [Tooltip("Score field to update the score")]
+    [SerializeField]
+    NumberField scoreField;
+
+    [Tooltip("Points to add")]
+    [SerializeField]
+    int pointsToAdd;
+
+    private bool active = false;
+
+    private GameObject color;
 
     void OnTriggerEnter2D(Collider2D other)
     {
         active = true;
-        if(other.tag == triggeringTag)
+        if (other.tag == triggeringTag)
         {
             color = other.gameObject;
         }
@@ -29,15 +42,13 @@ public class GetColorOnTrigger : MonoBehaviour
         {
             if (active)
             {
-                Debug.Log("second");
-                Destroy(color);
+                Destroy (color);
                 scoreField.SetNumber(scoreField.GetNumber() + pointsToAdd);
             }
             else
             {
                 scoreField.SetNumber(scoreField.GetNumber() - pointsToAdd);
             }
-
         }
     }
 
@@ -45,19 +56,4 @@ public class GetColorOnTrigger : MonoBehaviour
     {
         active = false;
     }
-
-    /*
-    private void OnTriggerStay2D(Collider2D other)
-    {
-        if (other.tag == triggeringTag && enabled)
-        {
-            Debug.Log("first ");
-
-            if (Input.GetKeyDown(keyToPress)) { 
-                Debug.Log("second");
-                Destroy(other.gameObject);
-            }
-        }
-    }
-    */
 }

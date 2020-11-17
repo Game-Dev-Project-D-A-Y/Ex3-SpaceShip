@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /*
+    Script to toggle mute
  */
 public class MuteManager : MonoBehaviour
 {

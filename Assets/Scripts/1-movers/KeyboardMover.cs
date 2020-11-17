@@ -12,6 +12,7 @@ public class KeyboardMover : MonoBehaviour
     [SerializeField]
     float speed = 1f;
 
+    [Tooltip("Rigidbody component to move")]
     [SerializeField]
     Rigidbody2D rb;
 
