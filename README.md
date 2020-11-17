@@ -33,7 +33,7 @@ To eliminate all the enemies around the screen, we've created the [DestroyAllObj
 To do so we used [FindGameObjectsWithTag](https://docs.unity3d.com/ScriptReference/GameObject.FindGameObjectsWithTag.html
 ) which gave us an array of all the enemies and then we were able to count how many we have destroyed in order to update the score bored.  
   
-    <img src=https://github.com/Game-Dev-Project-D-A-Y/Ex3-Spaceship/blob/master/Images%20for%20github/bonbEvery20.jpg width="250"/>
+ <img src=https://github.com/Game-Dev-Project-D-A-Y/Ex3-Spaceship/blob/master/Images%20for%20github/bonbEvery20.jpg width="250"/>
 
 
 ## B - Boundries
