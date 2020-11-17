@@ -3,7 +3,7 @@
 
 ## A - Changing & Improving the lesson's game 
 ### (Choose from 1-5 and add an original)
-[Play Our Game](https://game-dev-project-d-a-y.itch.io/spaceship-parta)  
+[View On Itch.io](https://game-dev-project-d-a-y.itch.io/spaceship-parta)  
  _**Note** - Play all the following games on **full screen mode**_
 
 ### 3 - The spaceship has N lives and only when it crashes N times it will be destroyed.
@@ -40,7 +40,7 @@ To do so we used [FindGameObjectsWithTag](https://docs.unity3d.com/ScriptReferen
 
 
 ### 1 - A flat world with visible boundaries
-[Play Our Game](https://game-dev-project-d-a-y.itch.io/spaceshippartb1)
+[View On Itch.io](https://game-dev-project-d-a-y.itch.io/spaceshippartb1)
 
 We've created a prefab "border" and we used 4 border objects - each one represents a border of the game (top, bottom, left and right)  
 Each border has these components: 
@@ -60,14 +60,14 @@ In the KeyboardMover component of the spaceship we've added a RigidBody object w
 
 
 ### 2 - A flat world with invisible boundaries
-[Play Our Game](https://game-dev-project-d-a-y.itch.io/spaceship-part-b2)
+[View On Itch.io](https://game-dev-project-d-a-y.itch.io/spaceship-part-b2)
 
 To do this we just had to do one simple change from the previous scene (1-A):  
 We've maid the mesh Renderer invisbile (by ticking the box right near the component's name)  
 now you can't see the shape of the border but it functionality works.
 
 ### 3 - A round world. When the player reaches one side of the world he appears on the other side.
-[Play Our Game](https://game-dev-project-d-a-y.itch.io/spaceshippartb3)
+[View On Itch.io](https://game-dev-project-d-a-y.itch.io/spaceshippartb3)
 
 First thing we've clicked on the border to avoid them on this task.  
 We added a script named [CircleWorldCamera](https://github.com/Game-Dev-Project-D-A-Y/Ex3-Spaceship/blob/master/Assets/Scripts/5-scripts/CircleWorldCamera.cs).  
