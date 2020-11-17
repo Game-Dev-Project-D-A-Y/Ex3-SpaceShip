@@ -1,4 +1,4 @@
-# Ex3 - Game Development PREFABS & TRIGGERS
+# Ex3 - Game Development PREFABS & TRIGGERS :space_invader: :video_game: :space_invader: :video_game: 
 
 ## A - Changing & Improving the lesson's game 
 ### (Choose from 1-5 and add an original)
@@ -26,7 +26,7 @@ The LaserShooter inherits the KeyboardSpawnerWithDelay.
   Link to scripts:  
   * [KeyboardSpawnerWithDelay](https://github.com/Game-Dev-Project-D-A-Y/Ex3-Spaceship/blob/master/Assets/Scripts/2-spawners/KeyboardSpawnerWithDelay.cs)
 
-### Extra Feature - Special Bomb eliminates all enemies around 
+### Extra Feature - Special Bomb eliminates all enemies around :bomb:  
 We added a script - **[SpawnByScore](https://github.com/Game-Dev-Project-D-A-Y/Ex3-Spaceship/blob/master/Assets/Scripts/2-spawners/SpawnByScore.cs)** which will reveal a special bomb every N amount of enemy kills (N may be changed by Inspector).  
 We added the prefab **"Bomb"** which will be cloned every time it will be called by it's spawner.  
 To eliminate all the enemies around the screen, we've created the [DestroyAllObjectsOnTrigger](https://github.com/Game-Dev-Project-D-A-Y/Ex3-Spaceship/blob/master/Assets/Scripts/3-collisions/DestroyAllObjectsOnTrigger.cs) which basically destroyes all the enemies around.  
