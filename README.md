@@ -22,8 +22,12 @@ The LaserShooter inherits the KeyboardSpawnerWithDelay.
   Link to scripts:  
   * [KeyboardSpawnerWithDelay]()
 
-### Extra Feature
-
+### Extra Feature - Special Bomb eliminates all enemies around 
+We added a script - **"[SpawnByScore]()"** which will reveal a special bomb every N amount of enemy kills (N may be changed by Inspector).  
+We added the prefab **"Bomb"** which will be cloned every time it will be called by it's spawner.  
+To eliminate all the enemies around the screen, we've created the [DestroyAllObjectsOnTrigger]() which basically destroyes all the enemies around.  
+To do so we used [FindGameObjectsWithTag](https://docs.unity3d.com/ScriptReference/GameObject.FindGameObjectsWithTag.html
+) which gave us an array of all the enemies and then we were able to count how many we have destroyed in order to update the score bored.
 
 ## B - Boundries
 
