@@ -16,6 +16,8 @@
 ## B - Boundries
 
 ### 1 - A flat world with visible boundaries
+Link https://game-dev-project-d-a-y.itch.io/spaceshippartb1
+
 We've created a prefab "border" and we used 4 border objects - each one represents a border of the game (top, bottom, left and right)
 Each border has these components: 
 * Rigid Body - Control of an object's position through physics simulation.
@@ -31,6 +33,7 @@ maintains the position of the spaceship inside our boundries..
 
 
 ### 2 - A flat world with invisible boundaries
+Link https://game-dev-project-d-a-y.itch.io/spaceship-part-b2
 To do this we just had to do one simple change from the previous scene (1-A):
 We've maid the mesh Renderer invisbile (by ticking the box right near the component's name)
 now you can't see the shape of the border but it functionality works.
@@ -43,7 +46,7 @@ With a few simple "if" statements we covered all of the options (4 options one f
 
 
 ## C - Implement Core Game Loop
-
+Link - https://game-dev-project-d-a-y.itch.io/rgb-hero
 ![alt text](https://github.com/Game-Dev-Project-D-A-Y/Ex3-Spaceship/blob/master/Images%20for%20github/RGBHero.jpeg?raw=true)
 
 We created a game based on the logic of Guitar Hero.
