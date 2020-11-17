@@ -1,4 +1,5 @@
-# Ex3 - Game Development PREFABS & TRIGGERS :space_invader: :video_game: :space_invader: :video_game: 
+# Ex3 - Game Development PREFABS & TRIGGERS 
+# :space_invader: :video_game: :space_invader: :video_game: :space_invader: :video_game:  :space_invader: :video_game:  :space_invader: :video_game:  :space_invader: :video_game: 
 
 ## A - Changing & Improving the lesson's game 
 ### (Choose from 1-5 and add an original)
