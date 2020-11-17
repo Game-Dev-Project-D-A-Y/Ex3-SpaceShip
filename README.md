@@ -18,7 +18,7 @@ In addition, we had to add a script to the ship which will handle the collisions
 ### 4 - Delay between every shot.  
 Instead of using the KeyboardSpawner script we've implemented our own **KeyboardSpawnerWithDelay** script.  
 This script allows us to adjust a delay which its duration may be changed in the Inspector.  
-The LaserShooter inherits the KeyboardSpawnerWithDelay. 
+The LaserShooter inherits the KeyboardSpawnerWithDelay.   
   Link to scripts:  
   * [KeyboardSpawnerWithDelay](https://github.com/Game-Dev-Project-D-A-Y/Ex3-Spaceship/blob/master/Assets/Scripts/2-spawners/KeyboardSpawnerWithDelay.cs)
 
