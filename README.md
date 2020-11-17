@@ -51,8 +51,8 @@ The target of the game is to press the correct key on the keyboard for each Caps
 The prefab capsules and the color positions both have the colider component. 
 <br/> The targets each have a script named "GetColorOnTrigger". 
 <br/> GetColorOnTrigger - This script Goal is to open a time space which allow you to destroy once activated while collision. Using the OnTriggerEnter we actviated the option to destroy (with a boolian flag which becoms true on enter). If the correct Key has been pressed and the active is true (we are in a collistion) we will destroy the objcet (the capsule) and add a point to the score board. 
-<br/> ## Features added
-<br/> *ScorBoard - Every time you press the correct button you get an extra point and every time you press incorrectly you loose a point!
-<br/> *Sound - We added music to acompnay the player which can be muted by a clicking the sound button.
-<br/> *Time - We added a timer - Each player has 60 seconds to reach the best score.
-<br/> *Restart - You may resatrt the game pressing the restart button on the bottom right of the screen. This may occure while playing in addition to the end of the game.
+ ## Features added
+ * ScorBoard - Every time you press the correct button you get an extra point and every time you press incorrectly you loose a point!
+ * Sound - We added music to acompnay the player which can be muted by a clicking the sound button.
+ * Time - We added a timer - Each player has 60 seconds to reach the best score.
+ * Restart - You may resatrt the game pressing the restart button on the bottom right of the screen. This may occure while playing in addition to the end of the game.
