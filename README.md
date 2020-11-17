@@ -16,7 +16,8 @@
 ## B - Boundries
 
 <img src=https://github.com/Game-Dev-Project-D-A-Y/Ex3-Spaceship/blob/master/Images%20for%20github/partb1.jpg width="800"/>
-<br/>
+
+
 ### 1 - A flat world with visible boundaries
 Link https://game-dev-project-d-a-y.itch.io/spaceshippartb1
 
