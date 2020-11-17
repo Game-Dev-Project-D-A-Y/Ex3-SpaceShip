@@ -66,7 +66,7 @@ The target of the game is to press the correct key on the keyboard for each Caps
 <br/> Each color has its own key (shown on the screen)..
 The prefab capsules and the color positions both have the colider component. 
 <br/> The targets each have a script named "GetColorOnTrigger".  
-<br/> GetColorOnTrigger script - https://github.com/Game-Dev-Project-D-A-Y/Ex3-Spaceship/blob/master/Assets/Scripts/3-collisions/GetColorOnTrigger.cs
+<br/>  <b> GetColorOnTrigger script  </b>- https://github.com/Game-Dev-Project-D-A-Y/Ex3-Spaceship/blob/master/Assets/Scripts/3-collisions/GetColorOnTrigger.cs
 <br/> GetColorOnTrigger - This script Goal is to open a time space which allow you to destroy once activated while collision. Using the OnTriggerEnter we actviated the option to destroy (with a boolian flag which becoms true on enter). If the correct Key has been pressed and the active is true (we are in a collistion) we will destroy the objcet (the capsule) and add a point to the score board. 
  ## Features added
  * ScorBoard - Every time you press the correct button you get an extra point and every time you press incorrectly you loose a point!
