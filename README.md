@@ -40,6 +40,8 @@ We've maid the mesh Renderer invisbile (by ticking the box right near the compon
 now you can't see the shape of the border but it functionality works.
 
 ### 3 - A round world. When the player reaches one side of the world he appears on the other side.
+Link https://game-dev-project-d-a-y.itch.io/spaceshippartb3
+
 First thing we've clicked on the border to avoid them on this task.
 We added a script named "RoundWorld". In this script we got the position of every border using the orthographicSize combined with the camera.aspect function..By using the Input.GetAxis function we
 know in which direction the spaceship is flying from.
