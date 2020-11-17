@@ -79,7 +79,8 @@ With a few simple "if" statements we covered all of the options (4 options one f
 
 
 ## C - Implement Core Game Loop
-[Play RGB-Hero Game](https://game-dev-project-d-a-y.itch.io/rgb-hero)
+[Play RGB-Hero Game](https://game-dev-project-d-a-y.itch.io/rgb-hero)  
+  
 ![alt text](https://github.com/Game-Dev-Project-D-A-Y/Ex3-Spaceship/blob/master/Images%20for%20github/RGBHero.jpeg?raw=true)
 
 We created a game based on the logic of Guitar Hero.
@@ -96,3 +97,10 @@ Using the OnTriggerEnter we actviated the option to destroy (with a boolian flag
  * Sound - We added music to acompnay the player which can be muted by a clicking the sound button.
  * Time - We added a timer - Each player has 60 seconds to reach the best score.
  * Restart - You may resatrt the game pressing the restart button on the bottom right of the screen. This may occure while playing in addition to the end of the game.
+
+  
+    
+  #### Authors - 
+  * Alon Perlmuter
+  * Yishay Garame
+  * Dovie Chitiz
